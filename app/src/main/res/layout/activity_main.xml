@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/new_album"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="新建" />
+        <Button
+            android:id="@+id/select_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="搜索" />
+<!--        <Button-->
+<!--            android:id="@+id/new_db"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:text="建库" />-->
+        <EditText
+            android:id="@+id/edit_album_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:hint="输入相册名/图片名"
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listofalbum"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+</LinearLayout>
